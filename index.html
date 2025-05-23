@@ -200,6 +200,15 @@
             loadingIndicator.classList.add('hidden');
             updatePlayPauseIcon();
         });
+		
+		
+	
+    // Fallback error handling
+    document.querySelector('audio').onerror = function() {
+      console.error('Audio loading failed');
+      this.innerHTML = '<p>Error loading stream. Try refreshing.</p>';
+    };
+	
     </script>
 </body>
 </html>

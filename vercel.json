@@ -1,8 +1,12 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/stream-proxy",
-      "destination": "/api/proxy.js"
+      "src": "/stream-proxy/(.*)",
+      "dest": "/api/proxy",
+      "headers": {
+        "Cache-Control": "no-cache",
+        "Connection": "keep-alive"
+      }
     }
   ]
 }
