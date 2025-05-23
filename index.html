@@ -79,11 +79,8 @@
         <h1 class="text-3xl font-bold text-gray-800 mb-4">Voice of Arunachala</h1>
         <p class="text-lg text-indigo-600 font-semibold mb-6">Tune in and enjoy!</p>
 
-   <audio controls>
-  <source src="https://radio-ka99.vercel.app/stream-proxy" type="audio/mpeg">
-  <source src="https://radio-ka99.vercel.app/stream-proxy" type="audio/aac">
-  <source src="https://radio-ka99.vercel.app/stream-proxy" type="audio/ogg">
-   </audio>
+        <audio id="radioStream" src="https://radio-ka99.vercel.app/stream-proxy" type="audio/mpeg" preload="none"></audio>
+
         <div class="mb-6">
             <p id="statusDisplay" class="text-gray-600 text-sm font-medium">Loading...</p>
             <div id="loadingIndicator" class="hidden mx-auto mt-2 spinner"></div>
