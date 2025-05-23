@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Stream Player</title>
+    <style>
+        /* Add some basic styling to our player */
+        audio {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live Audio Stream</h1>
+    <!-- 
+        Note: Due to mixed content policies, this might not work as expected in all browsers.
+        Ideally, the stream should also be served over HTTPS if your site is HTTPS.
+    -->
+    <audio controls>
+        <source src="http://198.7.62.157:10088" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Optional: Handle player events or setup here
+    </script>
+</body>
+</html>
